@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# Data 
+data/raw/
+data/processed/
+data/sample_images/
+
+# Notebooks
+notebooks/.ipynb_checkpoints/
+
+# Node
+node_modules/
+.next/
+frontend/.next/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage

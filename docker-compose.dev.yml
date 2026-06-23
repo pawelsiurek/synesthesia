@@ -1,0 +1,12 @@
+services:
+  backend:
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules      # prevents host node_modules overwriting container's
+      - /app/.next
+    command: npm run dev
