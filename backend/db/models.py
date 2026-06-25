@@ -17,6 +17,7 @@ class Song(Base):
     themes        = Column(Text)
     cultural_tags = Column(Text)
     spotify_id    = Column(String(100), unique=True)
+    preview_url   = Column(String(500), nullable=True)
     document      = Column(Text, nullable=False)
     embedding     = Column(Vector(512), nullable=False)
     created_at    = Column(DateTime, server_default=func.now())
