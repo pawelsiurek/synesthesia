@@ -18,13 +18,8 @@ scikit-learn==1.5.0
 
 # Database
 sqlalchemy==2.0.30
-psycopg2-binary==2.9.9
+psycopg[binary]==3.3.4
 pgvector==0.3.0
-
-# Data enrichment
-spotipy==2.23.0
-lyricsgenius==3.0.1
-pandas==2.2.2
 
 # Utils
 python-dotenv==1.0.1
